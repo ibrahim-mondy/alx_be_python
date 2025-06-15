@@ -3,11 +3,10 @@ class BankAccount:
         self.account_balance = account_balance
         
     def deposit(self,amount):
-        if amount > 0 and amount <= self.account_balance:
-            self.account_balance += amount
+        self.account_balance += amount
             
     def withdraw(self, amount):
-        if amount > 0:
+        if amount > 0 and amount <= self.account_balance:
             self.account_balance -= amount
             return True
         else:
