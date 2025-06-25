@@ -1,3 +1,4 @@
+import math
 class Shape:
     def area(self):
         print("this is shape")
@@ -17,5 +18,5 @@ class Circle(Shape):
         self.radius = radius
     
     def area(self):
-        result = 22/7 * self.radius**2
+        result = math.pi * self.radius**2
         return f"The area of the Circle is: {result}"
