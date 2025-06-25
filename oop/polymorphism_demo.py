@@ -1,0 +1,21 @@
+class Shape:
+    def area(self):
+        print("this is shape")
+        
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        super().__init__()
+        self.length = length
+        self.width = width
+        
+    def area(self):
+        return self.length * self.width
+    
+class Circle(Shape):
+    def __init__(self, radius):
+        super().__init__()
+        self.radius = radius
+    
+    def area(self):
+        result = 22/7 * self.radius**2
+        return f"The area of the Circle is: {result}"
